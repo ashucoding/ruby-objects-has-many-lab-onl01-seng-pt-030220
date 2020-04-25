@@ -5,7 +5,7 @@ class Song
   def artist=(artist)
     @artist = artist
     artist.songs << self
-    Artist.song_count+=1
+    
   end
   def artist
     return @artist
@@ -16,6 +16,8 @@ class Song
   def initialize(name)
     @name = name
     @@all_songs << self
+    Artist.song_count+=1
+    
   end
 
   def artist_name
