@@ -27,7 +27,7 @@ def song_count
 end
 
   def self.song_count
-     @songs << song
+    return @@song_count
   end
 
 end
