@@ -16,6 +16,7 @@ class Post
   def initialize(title)
     @title = title
     @@all_posts << self
+    Author.post_count +=1
   end
 
   def author_name
