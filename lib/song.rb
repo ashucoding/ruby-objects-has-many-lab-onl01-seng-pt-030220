@@ -4,6 +4,7 @@ class Song
   @@all_songs = []
   def artist(artist)
     @artist = artist
+    artist.@songs 
   end
   def artist
     return @artist
