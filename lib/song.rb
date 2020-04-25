@@ -8,7 +8,6 @@ class Song
   end
   def initialize(name)
     @name = name
-    @song = []
     @@all_songs << self
   end
 
