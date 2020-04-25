@@ -11,7 +11,7 @@ class Post
     @author
   end
   def self.all_posts
-    return @@all_posts
+    return @@all
   end
   def initialize(title)
     @title = title
