@@ -1,9 +1,15 @@
 class Post
 
-  attr_accessor :title, :author
+  attr_accessor :title
   
   @@all_posts = []
-  
+  def author=(author)
+    @author = author
+    author.posts << self
+  end
+  def author
+    @author
+  end
   def self.all_posts
     return @@all_posts
   end
