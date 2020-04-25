@@ -1,8 +1,13 @@
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name
 
   @@all_songs = []
-  
+  def artist(artist)
+    @artist = artist
+  end
+  def artist
+    return @artist
+  end
   def self.all_songs
     return @@all_songs
   end
