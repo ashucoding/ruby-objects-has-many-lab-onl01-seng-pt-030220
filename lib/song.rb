@@ -9,6 +9,7 @@ class Song
   def initialize(name)
     @name = name
     @song = []
+    @@all_songs << self
   end
 
   def artist_name
