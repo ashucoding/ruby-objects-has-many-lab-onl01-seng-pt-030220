@@ -10,7 +10,7 @@ class Post
   def author
     @author
   end
-  def self.all_posts
+  def self.all
     return @@all
   end
   def initialize(title)
